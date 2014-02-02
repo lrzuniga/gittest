@@ -1,6 +1,15 @@
-class Display < MotorCycle
-  def dispAttr
-    'Color of MotorCycle is ' + @color
-    'Make  of MotorCycle is ' + @make
+class MotorCycle
+  def initialize(make, color)
+    # Instance variables
+    @make = make
+    @color = color
   end
+  def startEngine
+    if (@engineState)
+      'Engine is already Running'
+    else
+      @engineState = true
+      'Engine Idle'
+end
+end
 end
